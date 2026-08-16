@@ -11,11 +11,11 @@ export default function Home() {
           OLSEN VIDEO
         </Link>
         <nav className="hero__nav" aria-label="Site navigation">
-          <Link className="hero__nav-link" href="/services">
-            SERVICES
+          <Link className="hero__nav-link" href="/ydelser">
+            YDELSER
           </Link>
           <Link className="hero__nav-link" href="/#portfolio">
-            PORTFOLIO
+            PORTEFØLJE
           </Link>
           <Link className="hero__nav-cta" href="/kontakt">
             <span>KONTAKT</span>

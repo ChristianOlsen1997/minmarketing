@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "OLSEN VIDEO — Short-form storytelling",
+  title: "OLSEN VIDEO - Velkommen",
   description: "Organic short-form video and Reels from Aalborg, Denmark.",
   icons: {
     icon: "/favicon.png",

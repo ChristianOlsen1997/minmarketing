@@ -4,7 +4,7 @@ import Link from "next/link";
 import christianImage from "../../public/Pics/mig2.jpg";
 
 export const metadata: Metadata = {
-  title: "Kontakt — MIN MARKETING",
+  title: "OLSEN VIDEO - Kontakt",
   description: "Kontakt Christian Olsen om video og content til sociale medier.",
 };
 
@@ -16,11 +16,11 @@ export default function ContactPage() {
           OLSEN VIDEO
         </Link>
         <nav className="hero__nav" aria-label="Site navigation">
-          <Link className="hero__nav-link" href="/services">
-            SERVICES
+          <Link className="hero__nav-link" href="/ydelser">
+            YDELSER
           </Link>
           <Link className="hero__nav-link" href="/#portfolio">
-            PORTFOLIO
+            PORTEFØLJE
           </Link>
           <Link className="hero__nav-cta" href="/kontakt">
             <span>KONTAKT</span>
