@@ -7,8 +7,8 @@ export default function Home() {
     <>
       <main className="hero" id="top">
       <header className="hero__header" aria-label="Primary navigation">
-        <Link className="hero__brand" href="/" aria-label="MIN MARKETING home">
-          MIN MARKETING
+        <Link className="hero__brand" href="/" aria-label="OLSEN VIDEO home">
+          OLSEN VIDEO
         </Link>
         <nav className="hero__nav" aria-label="Site navigation">
           <Link className="hero__nav-link" href="/services">
