@@ -123,7 +123,7 @@ body {
 
 .hero__showcase {
   min-width: 0;
-  transform: translateX(clamp(6rem, 9vw, 8.75rem));
+  transform: translateX(clamp(2rem, 4.5vw, 6rem));
 }
 
 .reel-stack {
@@ -147,8 +147,12 @@ body {
   border-radius: 1.5rem;
   cursor: pointer;
   overflow: hidden;
-  background: #11110f;
-  box-shadow: 0 1.45rem 3.4rem rgba(10, 10, 9, 0.12);
+  background: linear-gradient(135deg, rgba(60, 60, 60, 0.98), rgba(18, 18, 18, 0.99) 30%, rgba(42, 42, 42, 0.98) 68%, rgba(0, 0, 0, 1));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    inset 0 0 0 2.6px rgba(255, 255, 255, 0.12),
+    inset 0 0 0 5px rgba(0, 0, 0, 0.18),
+    0 1.45rem 3.4rem rgba(10, 10, 9, 0.12);
   transition:
     transform 420ms cubic-bezier(0.2, 0.82, 0.18, 1),
     box-shadow 420ms ease,
@@ -159,13 +163,14 @@ body {
 .reel-stack__item::before {
   content: "";
   position: absolute;
-  top: 0.58rem;
+  top: 0.7rem;
   left: 50%;
   z-index: 2;
-  width: 22%;
-  height: 0.58rem;
+  width: 25%;
+  height: 0.8rem;
   border-radius: 999px;
-  background: #11110f;
+  background: linear-gradient(180deg, rgba(33, 33, 33, 0.96), rgba(0, 0, 0, 1));
+  border: 1px solid rgba(255, 255, 255, 0.08);
   transform: translateX(-50%);
   pointer-events: none;
 }
@@ -220,7 +225,7 @@ body {
   font-size: clamp(2.45rem, 4.3vw, 5.4rem);
   font-weight: 600;
   letter-spacing: -0.085em;
-  line-height: 0.76;
+  line-height: 0.86;
   text-transform: uppercase;
 }
 
@@ -322,6 +327,8 @@ body {
 .portfolio__stat:first-child .portfolio__stat-number {
   font-size: clamp(3.2rem, 4.9vw, 7.35rem);
   white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1, "lnum" 1;
 }
 
 .portfolio__stat:first-child {
@@ -559,6 +566,21 @@ body {
 
 .about__body p + p {
   margin-top: 1.65em;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .hero__composition {
+    grid-template-columns: minmax(15rem, 0.78fr) minmax(25rem, 1.1fr);
+    gap: clamp(2rem, 3vw, 4rem);
+  }
+
+  .hero__showcase {
+    transform: translateX(clamp(1.25rem, 2vw, 3rem));
+  }
+
+  .hero__message {
+    max-width: 32rem;
+  }
 }
 
 @media (max-width: 760px) {
