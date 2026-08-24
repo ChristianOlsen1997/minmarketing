@@ -57,7 +57,7 @@ export default function ContactPage() {
               TLF: <a href="tel:+4560492050">60492050</a>
             </p>
             <p>
-              <a href="mailto:christian@olsenvideo.dk">prodjody@gmail.com</a>
+              <a href="mailto:christian@olsenvideo.dk">christian@olsenvideo.dk</a>
             </p>
           </address>
         </div>
